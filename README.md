@@ -1,2 +1,17 @@
-# To-My-Bound-Few
-A tribute site dedicated to my closest friends, showcasing my "homies" and their unique interests. I have been building and refining this project since 2023, evolving it from a simple list into a highly stylized, interactive character-gallery experience.
+// To My Bound Few
+
+A personal tribute website dedicated to my closest friends.
+
+// Features
+- Interactive navigation buttons
+- Custom themed cards for each friend
+- Responsive image galleries
+- Custom fonts and styling
+
+// Built With
+HTML5
+CSS3
+JavaScript
+
+// Live Site
+https://deadvirtue.github.io/To-My-Bound-Few/
