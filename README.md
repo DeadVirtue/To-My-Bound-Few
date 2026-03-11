@@ -9,9 +9,9 @@ A personal tribute website dedicated to my closest friends.
 - Custom fonts and styling
 
 // Built With
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 // Live Site
-https://deadvirtue.github.io/To-My-Bound-Few/ 
+- https://deadvirtue.github.io/To-My-Bound-Few/ 
