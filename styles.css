@@ -357,13 +357,13 @@ max-width: 100%;
 }
 
 /* Custom fonts */
-@font-face { font-family:'Sigil Sans'; src:url('../fonts/Sigil Sans.otf') format('opentype'); } /* No'more font */
-@font-face { font-family:'MaturaMTSC'; src:url('../fonts/MaturaMTSC.TTF') format('truetype'); } /* Subheader font */
-@font-face { font-family:'Ringbearer'; src:url('../fonts/ringbearer.TTF') format('truetype'); } /* Header font */
-@font-face { font-family:'Saiyan Sans'; src:url('../fonts/Saiyan-Sans.ttf') format('truetype'); } /* Adan font */
-@font-face{ font-family:'manga-bold'; src: url('../fonts/manga_speak_bold.ttf') format('truetype'); } /* Adan sub font */
-@font-face { font-family:'Happy'; src:url('../fonts/Happy New Year.ttf') format('truetype'); } /* Latravion font */
-@font-face { font-family:'Ascend'; src:url('../fonts/Ascender.ttf') format('truetype'); } /* Latravion font */
+@font-face { font-family:'Sigil Sans'; src:url('fonts/Sigil Sans.otf') format('opentype'); } /* No'more font */
+@font-face { font-family:'MaturaMTSC'; src:url('fonts/MaturaMTSC.TTF') format('truetype'); } /* Subheader font */
+@font-face { font-family:'Ringbearer'; src:url('fonts/ringbearer.TTF') format('truetype'); } /* Header font */
+@font-face { font-family:'Saiyan Sans'; src:url('fonts/Saiyan-Sans.ttf') format('truetype'); } /* Adan font */
+@font-face{ font-family:'manga-bold'; src: url('fonts/manga_speak_bold.ttf') format('truetype'); } /* Adan sub font */
+@font-face { font-family:'Happy'; src:url('fonts/Happy New Year.ttf') format('truetype'); } /* Latravion font */
+@font-face { font-family:'Ascend'; src:url('fonts/Ascender.ttf') format('truetype'); } /* Latravion font */
 
 /* Size responsiveness */
 @media(max-width:768px){
@@ -375,3 +375,4 @@ max-width: 100%;
 @media(max-width:480px){
 	.friend-gallery { grid-template-columns:1fr; }
 }
+
