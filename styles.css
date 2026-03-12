@@ -129,15 +129,18 @@ a:hover{
 	grid-column:span 2;
 }
 
-.friend-image:hover {
-	transform:scale(1.2) !important;
-	filter: contrast(150%) brightness(1.2) !important;
-	cursor: crosshair;
+.friend-image: hover {
+	transform: scale(1.2) !important;
+	filter: contrast(125%) brightness(1.2) !important;
 }
 
 /* Page animation */
 @keyframes fadeInUp {
 	to { opacity:1; transform:translateY(0); }
+}
+
+.btn{
+	filter: brightness(115%) invert(125%);
 }
 
 /* No'more section */
@@ -377,6 +380,7 @@ max-width: 100%;
 @media(max-width:480px){
 	.friend-gallery { grid-template-columns:1fr; }
 }
+
 
 
 
