@@ -131,6 +131,7 @@ a:hover{
 
 .friend-image:hover {
 	transform:scale(1.2);
+	filter: contrast(120%);
 }
 
 /* Page animation */
@@ -375,4 +376,5 @@ max-width: 100%;
 @media(max-width:480px){
 	.friend-gallery { grid-template-columns:1fr; }
 }
+
 
