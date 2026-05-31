@@ -1,0 +1,66 @@
+/* cards */
+.friend-section {
+  display: none;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.friend-section.active {
+  display: flex;
+}
+
+.friend {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #f3c1e8;
+  max-width: 900px;
+}
+
+.card-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.friend-name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.friend-desc li {
+  line-height: 1.15;
+  margin-bottom: 0.55em;
+  margin-left: 1.5em;
+}
+
+/* Gallery */
+.friend-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 400px;
+}
+
+.friend-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.friend-image.wide {
+  grid-column: span 2;
+}
+
+.friend-image:hover {
+  transform: scale(1.2);
+}

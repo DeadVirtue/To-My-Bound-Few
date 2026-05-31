@@ -1,0 +1,78 @@
+/* base css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background-image: url('https://i.pinimg.com/564x/1d/0d/a9/1d0da922db9e9d389a41d1544b7fbf86.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: black;
+}
+
+.page {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: filter 0.3s ease;
+}
+
+a:hover {
+  filter: invert(25%);
+}
+
+.site-header {
+  font-family: 'Ringbearer', fantasy;
+  background-color: #ff0000;
+  border: 10px ridge grey;
+  text-align: center;
+  width: 60%;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+.site-header h3,
+.site-header .intro {
+  font-family: 'MaturaMTSC', cursive;
+  font-style: italic;
+}
+
+/* Page animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Size responsiveness */
+@media(max-width:768px) {
+  .card-content {
+    flex-direction: column;
+  }
+
+  .friend-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .friend-image {
+    height: auto;
+    aspect-ratio: 3/4;
+  }
+}
+
+@media(max-width:480px) {
+  .friend-gallery {
+    grid-template-columns: 1fr;
+  }
+}
