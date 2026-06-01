@@ -45,7 +45,7 @@
 .friend-desc li {
   line-height: 1.6;
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
 /* Gallery */
@@ -72,7 +72,7 @@
 
 .friend-image:hover {
   transform: scale(1.2);
-  filter: contrast(125%);
+  filter: contrast(150%);
   position: relative;
   z-index: 10;
 }

@@ -14,7 +14,7 @@
   display: flex;
   gap: 20px;
   font-family: 'MaturaMTSC', Matura MT Script Capitals, cursive;
-  font-size: 1rem;
+  font-size: 20px;
   width: 90%;
   font-weight: bold;
   color: #8C8B8B;
@@ -56,10 +56,10 @@
 /* No'more section */
 .nomore-page .friend {
   max-width: 90%;
-  padding: 15px;
+  padding: 2px;
   border: 11px ridge darkmagenta;
   border-radius: 15px;
-  background-color: #f3c1e8;
+  background-color: #f28eff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -90,6 +90,11 @@
   object-fit: cover;
   border-radius: 15px;
   border: 5px outset darkmagenta;
+}
+
+.nomore-page .friend-desc li {
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .nomore-page .friend-gallery {
