@@ -1,29 +1,27 @@
-/* cards */
+/* base friend styles css */
 .friend-section {
-  display: none;
+  display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
 }
 
-.friend-section.active {
-  display: flex;
-}
-
+/* originally .friend-card */
 .friend {
   display: flex;
   flex-direction: column;
   padding: 15px;
   border-radius: 15px;
   background-color: #f3c1e8;
-  max-width: 900px;
+  max-width: 90%;
 }
 
 .card-content {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .card-info {
@@ -36,9 +34,9 @@
 }
 
 .friend-desc li {
-  line-height: 1.15;
-  margin-bottom: 0.55em;
-  margin-left: 1.5em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  margin-left: 2em;
 }
 
 /* Gallery */
@@ -47,6 +45,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   max-width: 400px;
+  margin-top: 15px;
 }
 
 .friend-image {
@@ -54,7 +53,8 @@
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .friend-image.wide {
@@ -63,4 +63,16 @@
 
 .friend-image:hover {
   transform: scale(1.2);
+  filter: contrast(125%);
+  position: relative;
+  z-index: 10;
+}
+
+.friend-page,
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
 }

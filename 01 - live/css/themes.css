@@ -1,4 +1,4 @@
-/* themes */
+/* specific friends styles css */
 .home-page .friend {
   max-width: 90%;
   padding: 15px;
@@ -13,21 +13,22 @@
 .home-page .card-content {
   display: flex;
   gap: 20px;
-  font-family: 'MaturaMTSC', cursive, Matura MT Script Capitals;
+  font-family: 'MaturaMTSC', Matura MT Script Capitals, cursive;
   font-size: 1rem;
   width: 90%;
   font-weight: bold;
   color: #8C8B8B;
+  text-shadow: 2px 2px 2px black;
 }
 
 .home-page .friend-name {
-  color: #8C8B8B;
-  background-color: #C0C0C0;
+  color: #8c8b8bde;
+  background-color: #ccc4f2;
   border: 4px solid #8137B8;
   padding: 10px 20px;
   text-align: center;
-  font-family: 'MaturaMTSC';
-  text-shadow: 4px 4px 5px black;
+  font-family: 'MaturaMTSC', cursive;
+  text-shadow: 4px 4px 4px black;
 }
 
 .home-page .friend-image {
@@ -91,11 +92,9 @@
   object-fit: cover;
   border-radius: 15px;
   border: 5px outset darkmagenta;
-  transition: transform 0.3s ease-in-out;
 }
 
 .nomore-page .friend-gallery {
-  /* No'more's card and images */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
@@ -107,8 +106,6 @@
 }
 
 /* Adan section */
-
-
 .adan-page .friend {
   max-width: 90%;
   padding: 15px;
@@ -153,7 +150,6 @@
   object-fit: cover;
   border-radius: 15px;
   border: 5px ridge #FF0000;
-  transition: transform 0.3s ease-in-out;
 }
 
 /* Latravion section */
@@ -215,7 +211,6 @@
   object-fit: cover;
   border-radius: 15px;
   border: 8px ridge #AC1111;
-  transition: transform 0.3s ease-in-out;
 }
 
 .latravion-page .friend-image.wide {
@@ -226,43 +221,41 @@
 /* Custom fonts */
 @font-face {
   font-family: 'Sigil Sans';
-  src: url('../fonts/Sigil Sans.otf') format('opentype');
+  src: url('../../fonts/Sigil Sans.otf') format('opentype');
 }
 
 /* No'more font */
 @font-face {
   font-family: 'MaturaMTSC';
-  src: url('../fonts/MaturaMTSC.TTF') format('truetype');
+  src: url('../../fonts/MaturaMTSC.TTF') format('truetype');
 }
 
 /* Subheader font */
 @font-face {
   font-family: 'Ringbearer';
-  src: url('../fonts/ringbearer.TTF') format('truetype');
+  src: url('../../fonts/ringbearer.TTF') format('truetype');
 }
 
 /* Header font */
 @font-face {
   font-family: 'Saiyan Sans';
-  src: url('../fonts/Saiyan-Sans.ttf') format('truetype');
+  src: url('../../fonts/Saiyan-Sans.ttf') format('truetype');
 }
 
 /* Adan font */
 @font-face {
   font-family: 'manga-bold';
-  src: url('../fonts/manga_speak_bold.ttf') format('truetype');
+  src: url('../../fonts/manga_speak_bold.ttf') format('truetype');
 }
 
 /* Adan sub font */
 @font-face {
   font-family: 'Happy';
-  src: url('../fonts/Happy New Year.ttf') format('truetype');
+  src: url('../../fonts/Happy New Year.ttf') format('truetype');
 }
 
 /* Latravion font */
 @font-face {
   font-family: 'Ascend';
-  src: url('../fonts/Ascender.ttf') format('truetype');
+  src: url('../../fonts/Ascender.ttf') format('truetype');
 }
-
-/* Latravion font */

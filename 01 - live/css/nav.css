@@ -1,4 +1,4 @@
-/* navigation buttons */
+/* navigation buttons css */
 .site-nav {
   display: flex;
   justify-content: center;
@@ -7,6 +7,7 @@
   gap: 15px;
   margin: 2rem auto;
   max-width: 900px;
+  max-height: 600px;
 }
 
 .nav-link {
@@ -26,10 +27,11 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  text-shadow: 2px 2px 2px black;
 }
 
 .home-btn:hover {
-  background-color: #8C8B8B;
+  background-color: #4B0082;
   transform: scale(1.10);
   color: lightgray;
 }
@@ -43,6 +45,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  text-shadow: 2px 2px 2px black;
 }
 
 .nomore-btn:hover {
@@ -53,19 +56,21 @@
 .adan-btn {
   font-family: 'Saiyan Sans';
   font-size: 30px;
-  background-color: #AA0000;
+  background-color: #ce0a0a;
   color: red;
   border: 4px ridge darkred;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  text-shadow: 2px 2px 2px black;
 }
 
 .adan-btn:hover {
-  background-color: red;
-  color: #920000;
+  background-color: darkred;
+  color: red;
   transform: scale(1.1);
+  border: 4px solid darkred;
 }
 
 .latravion-btn {
@@ -73,15 +78,16 @@
   font-size: 40px;
   background-color: black;
   color: #B83218;
-  border: 4px solid #8B0000;
+  border: 4px solid #a20000;
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  text-shadow: 1px 1px 2px black;
 }
 
 .latravion-btn:hover {
-  background-color: #AC0000;
+  background-color: #A20000;
   color: black;
   transform: scale(1.10);
 }

@@ -1,4 +1,4 @@
-/* base css */
+/* body/baseline css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,11 +7,12 @@
 
 body {
   font-family: 'Times New Roman', serif;
-  background-image: url('https://i.pinimg.com/564x/1d/0d/a9/1d0da922db9e9d389a41d1544b7fbf86.jpg');
+  background-image: url('../../images/IMG_20250227_170938_336.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-color: black;
+  background-color: rgb(221, 135, 7);
+  justify-content: center;
 }
 
 .page {
@@ -24,10 +25,11 @@ a {
   color: inherit;
   text-decoration: underline;
   transition: filter 0.3s ease;
+  cursor: pointer;
 }
 
 a:hover {
-  filter: invert(25%);
+  filter: contrast(125%);
 }
 
 .site-header {
@@ -58,16 +60,6 @@ a:hover {
 @media(max-width:768px) {
   .card-content {
     flex-direction: column;
-  }
-
-  .friend-gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-  }
-
-  .friend-image {
-    height: auto;
-    aspect-ratio: 3/4;
   }
 }
 

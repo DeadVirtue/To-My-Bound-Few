@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin:0; padding:0; }
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	font-family: 'Times New Roman', serif;
@@ -9,29 +13,36 @@ body {
 	background-color: black;
 }
 
-.page { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.5s ease forwards; }
+.page {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeInUp 0.5s ease forwards;
+}
 
-a{
+a {
 	color: inherit;
 	text-decoration: underline;
 	transition: filter 0.3s ease;
 }
 
-a:hover{
+a:hover {
 	filter: invert(25%);
 }
 
-.welcome{ /* Header */
+.welcome {
+	/* Header */
 	font-family: 'Ringbearer', fantasy;
 	background-color: #ff0000;
 	border: 10px ridge grey;
 	align-content: center;
 	text-align: center;
 	width: 60%;
-	margin: 10rem auto 10rem auto; /* top bottom left right */
+	margin: 10rem auto 10rem auto;
+	/* top bottom left right */
 }
 
-.intro{ /* Subheader */
+.intro {
+	/* Subheader */
 	text-align: center;
 	border: 7px ridge grey;
 	background-color: red;
@@ -42,7 +53,9 @@ a:hover{
 	font-family: 'MaturaMTSC', cursive;
 }
 
-.welcome, .intro{ /* Header and subheader */
+.welcome,
+.intro {
+	/* Header and subheader */
 	margin: 5px auto;
 	display: block;
 }
@@ -70,9 +83,9 @@ a:hover{
 .friend-section {
 	display: none;
 	flex-direction: row;
-	gap:20px;
-	justify-content:center;
-	align-items:flex-start;
+	gap: 20px;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .friend-section.active {
@@ -89,21 +102,21 @@ a:hover{
 }
 
 .card-content {
-	display:flex;
-	gap:20px;
-	align-items:flex-start;
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
 }
 
 .card-info {
-	flex:1;
+	flex: 1;
 }
 
 .friend-name {
-	font-size:30px;
-	margin-bottom:10px;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
 
-.friend-desc li{
+.friend-desc li {
 	line-height: auto;
 	margin-bottom: 0.55em;
 	margin-left: 1.5em;
@@ -111,35 +124,38 @@ a:hover{
 
 /* Gallery */
 .friend-gallery {
-	display:grid;
-	grid-template-columns: repeat(3,1fr);
-	gap:5px;
-	max-width:400px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+	max-width: 400px;
 }
 
-.friend-image { 
-	width:100%; 
-	height:200px; 
-	object-fit:cover; 
-	border-radius:10px; 
-	transition: transform 0.3s ease-in-out; 
+.friend-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
 }
 
 .friend-image.wide {
-	grid-column:span 2;
+	grid-column: span 2;
 }
 
 .friend-image:hover {
-	transform:scale(1.2);
+	transform: scale(1.2);
 }
 
 /* Page animation */
 @keyframes fadeInUp {
-	to { opacity:1; transform:translateY(0); }
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* Home button */
-.home-btn{
+.home-btn {
 	font-family: 'MaturaMTSC';
 	background-color: #C0C0C0;
 	color: #8C8B8B;
@@ -150,13 +166,13 @@ a:hover{
 	transition: transform 0.2s ease-in-out;
 }
 
-.home-btn:hover{
+.home-btn:hover {
 	background-color: #8C8B8B;
 	transform: scale(1.10);
 	color: lightgray;
 }
 
-#home .friend{
+#home .friend {
 	max-width: 90%;
 	padding: 15px;
 	border: 11px ridge #4B0082;
@@ -167,7 +183,7 @@ a:hover{
 	flex-direction: column;
 }
 
-#home .card-content{
+#home .card-content {
 	display: flex;
 	gap: 20px;
 	font-family: 'MaturaMTSC', cursive, Matura MT Script Capitals;
@@ -177,17 +193,17 @@ a:hover{
 	color: #8C8B8B;
 }
 
-#home .friend-name{
+#home .friend-name {
 	color: #8C8B8B;
 	background-color: #C0C0C0;
 	border: 4px solid #8137B8;
 	padding: 10px 20px;
 	text-align: center;
-	font-family:'MaturaMTSC';
+	font-family: 'MaturaMTSC';
 	text-shadow: 4px 4px 5px black;
 }
 
-#home .friend-image{
+#home .friend-image {
 	max-width: 100%;
 	width: 100%;
 	height: 200px;
@@ -197,7 +213,8 @@ a:hover{
 	transition: transform 0.3s ease-in-out;
 }
 
-#home .friend-gallery{ /* Home card and images */
+#home .friend-gallery {
+	/* Home card and images */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: auto;
@@ -209,7 +226,7 @@ a:hover{
 }
 
 /* No'more section */
-.nomore-btn{
+.nomore-btn {
 	font-family: 'Sigil Sans';
 	background-color: black;
 	color: orchid;
@@ -220,12 +237,12 @@ a:hover{
 	transition: transform 0.2s ease-in-out;
 }
 
-.nomore-btn:hover{
+.nomore-btn:hover {
 	background-color: darkmagenta;
 	transform: scale(1.10);
 }
 
-.nomore .friend{
+.nomore .friend {
 	max-width: 90%;
 	padding: 15px;
 	border: 11px ridge darkmagenta;
@@ -236,26 +253,27 @@ a:hover{
 	flex-direction: column;
 }
 
-.nomore .card-content{
+.nomore .card-content {
 	display: flex;
 	gap: 20px;
-	font-family: 'Sigil Sans', 'MaturaMTSC', cursive, Matura MT Script Capitals; /* MaturaMTSC is a fallback for numbers and uppercase letters, along with cursive if Sigil Sans isn't available */
+	font-family: 'Sigil Sans', 'MaturaMTSC', cursive, Matura MT Script Capitals;
+	/* MaturaMTSC is a fallback for numbers and uppercase letters, along with cursive if Sigil Sans isn't available */
 	font-size: 1rem;
 	width: 90%;
 	font-weight: bold;
 }
 
-.nomore .friend-name{
+.nomore .friend-name {
 	color: orchid;
 	background-color: black;
 	border: 4px solid darkmagenta;
 	padding: 10px 20px;
 	text-align: center;
-	font-family:'Sigil Sans';
+	font-family: 'Sigil Sans';
 	text-shadow: 4px 4px 5px black;
 }
 
-.nomore .friend-image{
+.nomore .friend-image {
 	max-width: 100%;
 	width: 100%;
 	height: 200px;
@@ -265,7 +283,8 @@ a:hover{
 	transition: transform 0.3s ease-in-out;
 }
 
-.nomore .friend-gallery{ /* No'more's card and images */
+.nomore .friend-gallery {
+	/* No'more's card and images */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: auto;
@@ -277,7 +296,7 @@ a:hover{
 }
 
 /* Adan section */
-.adan-btn{
+.adan-btn {
 	font-family: 'Saiyan Sans';
 	font-size: 30px;
 	background-color: #AA0000;
@@ -289,13 +308,13 @@ a:hover{
 	transition: transform 0.2s ease-in-out;
 }
 
-.adan-btn:hover{
+.adan-btn:hover {
 	background-color: red;
 	color: #920000;
 	transform: scale(1.1);
 }
 
-#adan .friend{
+#adan .friend {
 	max-width: 90%;
 	padding: 15px;
 	border: 11px ridge darkred;
@@ -306,8 +325,8 @@ a:hover{
 	flex-direction: column;
 }
 
-#adan .friend-name{
-	font-family:'Saiyan Sans';
+#adan .friend-name {
+	font-family: 'Saiyan Sans';
 	font-size: 65px;
 	color: red;
 	background-color: #AA2020;
@@ -318,12 +337,12 @@ a:hover{
 	text-shadow: 4px 4px 5px black;
 }
 
-#adan .friend-desc{
-	font-family:'manga-bold';
+#adan .friend-desc {
+	font-family: 'manga-bold';
 	font-size: 20px;
 }
 
-#adan .friend-gallery{
+#adan .friend-gallery {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: 200px;
@@ -332,8 +351,8 @@ a:hover{
 	gap: 5px;
 }
 
-#adan .friend-image{
-max-width: 100%;
+#adan .friend-image {
+	max-width: 100%;
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
@@ -343,8 +362,8 @@ max-width: 100%;
 }
 
 /* Latravion section */
-.latravion-btn{
-	font-family:'happy';
+.latravion-btn {
+	font-family: 'happy';
 	font-size: 40px;
 	background-color: black;
 	color: #B83218;
@@ -355,13 +374,13 @@ max-width: 100%;
 	transition: transform 0.2s ease-in-out;
 }
 
-.latravion-btn:hover{
+.latravion-btn:hover {
 	background-color: #AC0000;
 	color: black;
 	transform: scale(1.10);
 }
 
-.latravion .friend{
+.latravion .friend {
 	max-width: 90%;
 	padding: 15px;
 	border: 11px ridge darkred;
@@ -372,8 +391,8 @@ max-width: 100%;
 	flex-direction: column;
 }
 
-.latravion .friend-name{
-	font-family:'happy';
+.latravion .friend-name {
+	font-family: 'happy';
 	font-size: 65px;
 	color: #FF1111;
 	background-color: #250000;
@@ -381,16 +400,17 @@ max-width: 100%;
 	border: 10px ridge darkred;
 	border-radius: 5px;
 	text-align: center;
-	text-shadow: 4px 4px 5px black; /* 1st px is right movement, 2nd px is bottom movement, 3rd px is blur radius */
+	text-shadow: 4px 4px 5px black;
+	/* 1st px is right movement, 2nd px is bottom movement, 3rd px is blur radius */
 }
 
-.latravion .friend-desc{
-	font-family:'ascend';
+.latravion .friend-desc {
+	font-family: 'ascend';
 	font-size: 20px;
 	color: red;
 }
 
-.latravion .friend-gallery{
+.latravion .friend-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	gap: 8px;
@@ -400,7 +420,7 @@ max-width: 100%;
 	justify-content: center;
 }
 
-.latravion .card-content{
+.latravion .card-content {
 	display: flex;
 	gap: 20px;
 	font-family: 'ascend', cursive;
@@ -411,7 +431,7 @@ max-width: 100%;
 	align-items: flex-start;
 }
 
-.latravion .friend-image{
+.latravion .friend-image {
 	max-width: 100%;
 	width: 100%;
 	height: 200px;
@@ -421,27 +441,74 @@ max-width: 100%;
 	transition: transform 0.3s ease-in-out;
 }
 
-.latravion .friend-image.wide{
+.latravion .friend-image.wide {
 	grid-column: span 2;
 	aspect-ratio: 2 / 1;
 }
 
 /* Custom fonts */
-@font-face { font-family:'Sigil Sans'; src:url('../fonts/Sigil Sans.otf') format('opentype'); } /* No'more font */
-@font-face { font-family:'MaturaMTSC'; src:url('../fonts/MaturaMTSC.TTF') format('truetype'); } /* Subheader font */
-@font-face { font-family:'Ringbearer'; src:url('../fonts/ringbearer.TTF') format('truetype'); } /* Header font */
-@font-face { font-family:'Saiyan Sans'; src:url('../fonts/Saiyan-Sans.ttf') format('truetype'); } /* Adan font */
-@font-face{ font-family:'manga-bold'; src: url('../fonts/manga_speak_bold.ttf') format('truetype'); } /* Adan sub font */
-@font-face { font-family:'Happy'; src:url('../fonts/Happy New Year.ttf') format('truetype'); } /* Latravion font */
-@font-face { font-family:'Ascend'; src:url('../fonts/Ascender.ttf') format('truetype'); } /* Latravion font */
-
-/* Size responsiveness */
-@media(max-width:768px){
-	.card-content { flex-direction:column; }
-	.friend-gallery { grid-template-columns:repeat(2,1fr); gap:2px; }
-	.friend-image { height:auto; aspect-ratio:3/4; }
+@font-face {
+	font-family: 'Sigil Sans';
+	src: url('../fonts/Sigil Sans.otf') format('opentype');
 }
 
-@media(max-width:480px){
-	.friend-gallery { grid-template-columns:1fr; }
+/* No'more font */
+@font-face {
+	font-family: 'MaturaMTSC';
+	src: url('../fonts/MaturaMTSC.TTF') format('truetype');
+}
+
+/* Subheader font */
+@font-face {
+	font-family: 'Ringbearer';
+	src: url('../fonts/ringbearer.TTF') format('truetype');
+}
+
+/* Header font */
+@font-face {
+	font-family: 'Saiyan Sans';
+	src: url('../fonts/Saiyan-Sans.ttf') format('truetype');
+}
+
+/* Adan font */
+@font-face {
+	font-family: 'manga-bold';
+	src: url('../fonts/manga_speak_bold.ttf') format('truetype');
+}
+
+/* Adan sub font */
+@font-face {
+	font-family: 'Happy';
+	src: url('../fonts/Happy New Year.ttf') format('truetype');
+}
+
+/* Latravion font */
+@font-face {
+	font-family: 'Ascend';
+	src: url('../fonts/Ascender.ttf') format('truetype');
+}
+
+/* Latravion font */
+
+/* Size responsiveness */
+@media(max-width:768px) {
+	.card-content {
+		flex-direction: column;
+	}
+
+	.friend-gallery {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2px;
+	}
+
+	.friend-image {
+		height: auto;
+		aspect-ratio: 3/4;
+	}
+}
+
+@media(max-width:480px) {
+	.friend-gallery {
+		grid-template-columns: 1fr;
+	}
 }
