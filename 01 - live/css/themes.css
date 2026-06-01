@@ -1,10 +1,10 @@
 /* specific friends styles css */
 .home-page .friend {
   max-width: 90%;
-  padding: 15px;
-  border: 11px ridge #4B0082;
+  padding: 10px;
+  border: 11px ridge rgb(0, 0, 0);
   border-radius: 15px;
-  background-color: #5558ff;
+  background-color: #ff6f00;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -17,14 +17,15 @@
   font-size: 20px;
   width: 90%;
   font-weight: bold;
-  color: #8C8B8B;
+  color: #c8c8c8;
   text-shadow: 2px 2px 2px black;
+  text-align: center;
 }
 
 .home-page .friend-name {
-  color: #8c8b8bde;
-  background-color: #011a55;
-  border: 4px solid #a6a6a6;
+  color: #C8C8C8;
+  background-color: #ffb55a;
+  border: 4px solid #000000;
   border-radius: 7px;
   padding: 10px 20px;
   text-align: center;
@@ -37,20 +38,32 @@
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
-  border: 5px outset #011a55;
+  border: 5px outset rgb(0, 0, 0);
   transition: transform 0.3s ease-in-out;
 }
 
 .home-page .friend-gallery {
-  /* Home card and images */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   max-width: 700px;
   max-height: 520px;
-  border: 5px inset #011a55;
+  border: 5px inset rgb(0, 0, 0);
   padding: 5px;
   gap: 1px;
+}
+
+.home-page hr {
+  background-color: black;
+  padding: 1px;
+  border: none;
+  margin: 2px 2px 2px 2px;
+}
+
+p .friend-desc {
+  line-height: 1.8px;
+  padding: 5px;
+  margin: 5px 10px 5px 10px;
 }
 
 /* No'more section */
