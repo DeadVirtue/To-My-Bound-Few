@@ -20,7 +20,7 @@
 
 .home-btn {
   font-family: 'MaturaMTSC';
-  background-color: #C0C0C0;
+  background-color: #5558ff;
   color: #8C8B8B;
   border: 4px solid #4B0082;
   padding: 10px 15px;
@@ -33,7 +33,7 @@
 .home-btn:hover {
   background-color: #4B0082;
   transform: scale(1.10);
-  color: lightgray;
+  color: #8C8B8B;
 }
 
 .nomore-btn {
