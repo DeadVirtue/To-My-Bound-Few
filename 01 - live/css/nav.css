@@ -41,6 +41,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  overflow-block: clip;
 }
 
 .home-btn {
