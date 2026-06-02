@@ -50,6 +50,36 @@ a:hover {
   font-style: italic;
 }
 
+.footer {
+  background-color: cornflowerblue;
+  padding: 2%;
+  border-top: 5px solid black;
+}
+
+.footer-content {
+  display: block;
+  font-family: monospace;
+  margin: 2px;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+.footer-content a {
+  display: inline-block;
+  color: #dadada;
+  line-height: 1.5;
+  text-decoration: none;
+  font-style: italic;
+  transition: transform 0.3s ease, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer-content a:hover {
+  color: orange;
+  transform: scale(1.2);
+  text-shadow: 0 0 5px orange, 0.5px 0.5px 10px #ff7846, 1px 1px 20px #ff7129;
+}
+
 /* Page animation */
 @keyframes fadeInUp {
   to {

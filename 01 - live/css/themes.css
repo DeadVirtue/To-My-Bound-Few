@@ -17,13 +17,13 @@
   font-size: 20px;
   width: 90%;
   font-weight: bold;
-  color: #c8c8c8;
+  color: #dadada;
   text-shadow: 2px 2px 2px black;
   text-align: center;
 }
 
 .home-page .friend-name {
-  color: #C8C8C8;
+  color: #dadada;
   background-color: rgba(3, 126, 220, 0.9);
   border: 4px solid #000000;
   border-radius: 7px;
