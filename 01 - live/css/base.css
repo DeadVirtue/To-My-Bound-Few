@@ -10,9 +10,9 @@ body {
   background-image: url('../../images/bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: contain;
   background-color: rgb(0, 72, 255);
-  justify-content: center;
+  justify-content: center top;
 }
 
 .page {
@@ -36,10 +36,12 @@ a:hover {
   font-family: 'Ringbearer', fantasy;
   background-color: #ff0000;
   border: 10px ridge grey;
+  border-radius: 15px;
   text-align: center;
-  width: 60%;
+  width: 33%;
   margin: 5px auto;
   padding: 10px;
+  box-shadow: 2px 2px 5px black;
 }
 
 .site-header h3,

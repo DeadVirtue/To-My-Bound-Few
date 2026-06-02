@@ -1,4 +1,9 @@
 /* navigation buttons css */
+/* navigation bar */
+.site-nav * {
+  box-sizing: border-box;
+}
+
 .site-nav {
   display: flex;
   justify-content: center;
@@ -6,24 +11,45 @@
   flex-wrap: wrap;
   gap: 15px;
   margin: 2rem auto;
-  max-width: 900px;
-  max-height: 600px;
+  max-width: 10000px;
+  max-height: 250px;
 }
 
 .nav-link {
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 18px;
   transition: transform 0.2s ease;
+  height: auto;
+  width: 125px;
+  max-height: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-link,
+.home-btn,
+.nomore-btn,
+.adan-btn,
+.latravion-btn {
+  width: 125px;
+  height: 70px;
+  line-height: 42px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .home-btn {
-  font-family: 'MaturaMTSC';
-  background-color: #ffa600;
-  color: #C8C8C8;
-  border: 4px solid #000000;
   padding: 10px 15px;
+  font-family: 'MaturaMTSC';
+  background-color: #ff8400;
+  color: #C8C8C8;
+  font-size: 30px;
+  border: 4px ridge #000000;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -34,12 +60,14 @@
   background-color: #000000;
   transform: scale(1.10);
   color: #C8C8C8;
+  border: 4px solid black;
 }
 
 .nomore-btn {
   font-family: 'Sigil Sans';
   background-color: black;
   color: orchid;
+  font-size: 19px;
   border: 4px solid darkmagenta;
   padding: 10px 15px;
   border-radius: 8px;
@@ -55,7 +83,7 @@
 
 .adan-btn {
   font-family: 'Saiyan Sans';
-  font-size: 30px;
+  font-size: 35px;
   background-color: #ce0a0a;
   color: red;
   border: 4px ridge darkred;
