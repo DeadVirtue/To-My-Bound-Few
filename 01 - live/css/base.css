@@ -52,8 +52,12 @@ a:hover {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+}
+
 .footer {
-  background-color: cornflowerblue;
+  background-color: rgba(100, 149, 237, 0.9);
   padding: 2%;
   border-top: 8px groove rgb(197, 118, 0);
 }
@@ -61,10 +65,15 @@ a:hover {
 .footer-links {
   display: block;
   font-family: 'Minecraft';
-  margin: 2px;
-  font-size: 15px;
+  margin: 3px;
+  font-size: 16px;
   text-shadow: 2px 2px 2px black;
   text-align: center;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer-links a {
@@ -73,13 +82,18 @@ a:hover {
   line-height: 1.5;
   text-decoration: none;
   font-style: italic;
-  transition: transform 0.3s ease, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  filter: none;
+  transition: transform 0.3s ease, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in;
 }
 
 .footer-links a:hover {
   color: orange;
   transform: scale(1.2);
   text-shadow: 0 0 5px orange, 0.5px 0.5px 10px #ff7846, 1px 1px 20px #ff7129;
+}
+
+.footer-links a:active {
+  filter: invert(200%);
 }
 
 /* Page animation */
