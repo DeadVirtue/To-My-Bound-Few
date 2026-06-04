@@ -6,11 +6,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Times New Roman', serif;
   background-image: url('../../images/bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: contain;
+  background-position: center;
   background-color: rgb(0, 72, 255);
   justify-content: center top;
 }
@@ -53,19 +55,19 @@ a:hover {
 .footer {
   background-color: cornflowerblue;
   padding: 2%;
-  border-top: 5px solid black;
+  border-top: 8px groove rgb(197, 118, 0);
 }
 
-.footer-content {
+.footer-links {
   display: block;
-  font-family: monospace;
+  font-family: 'Minecraft';
   margin: 2px;
   font-size: 15px;
   text-shadow: 2px 2px 2px black;
   text-align: center;
 }
 
-.footer-content a {
+.footer-links a {
   display: inline-block;
   color: #dadada;
   line-height: 1.5;
@@ -74,7 +76,7 @@ a:hover {
   transition: transform 0.3s ease, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.footer-content a:hover {
+.footer-links a:hover {
   color: orange;
   transform: scale(1.2);
   text-shadow: 0 0 5px orange, 0.5px 0.5px 10px #ff7846, 1px 1px 20px #ff7129;

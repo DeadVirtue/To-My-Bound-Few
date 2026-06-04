@@ -64,7 +64,8 @@ Layout RulesStructure:
 Flexbox: Used for structure alignment in .card-content
 CSS Grid: Used for the image layout in .friend-gallery
 
-HTML AttributesLinks <a>: Use target="_blank (new tab) and title="..." (tooltip)
+HTML AttributesLinks <a>:
+Use target="_blank (new tab) and title="..." (tooltip)
 Images <img>: Use alt="..." (description)
 alt is invalid on <a> tags
 margin: [top] [right] [bottom] [left];

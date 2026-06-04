@@ -33,8 +33,6 @@
 .nomore-btn,
 .adan-btn,
 .latravion-btn {
-  width: 125px;
-  height: 70px;
   line-height: 42px;
   padding: 10px 15px;
   border-radius: 8px;
@@ -42,7 +40,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  overflow-block: clip;
+  overflow: hidden;
 }
 
 .home-btn {
@@ -104,7 +102,7 @@
 }
 
 .latravion-btn {
-  font-family: 'happy';
+  font-family: 'Happy';
   font-size: 40px;
   background-color: black;
   color: #B83218;

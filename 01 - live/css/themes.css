@@ -61,8 +61,8 @@
   box-shadow: 2px 2px 5px black;
 }
 
-p .friend-desc {
-  line-height: 1.8px;
+p.friend-desc {
+  line-height: 1.5;
   padding: 5px;
   margin: 5px 10px 5px 10px;
 }
@@ -179,7 +179,7 @@ p .friend-desc {
 }
 
 .latravion-page .friend-name {
-  font-family: 'happy';
+  font-family: 'Happy';
   font-size: 65px;
   color: #FF1111;
   background-color: #250000;
@@ -230,6 +230,11 @@ p .friend-desc {
 
 /* Custom fonts */
 @font-face {
+  font-family: 'Minecraft';
+  src: url('../../fonts/Minecraft.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Sigil Sans';
   src: url('../../fonts/Sigil Sans.otf') format('opentype');
 }
@@ -258,13 +263,13 @@ p .friend-desc {
   src: url('../../fonts/manga_speak_bold.ttf') format('truetype');
 }
 
-/* Adan sub font */
+/* Latravion's font */
 @font-face {
   font-family: 'Happy';
   src: url('../../fonts/Happy New Year.ttf') format('truetype');
 }
 
-/* Latravion font */
+/* Latravion's sub font font */
 @font-face {
   font-family: 'Ascend';
   src: url('../../fonts/Ascender.ttf') format('truetype');
