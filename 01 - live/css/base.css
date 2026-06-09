@@ -61,13 +61,14 @@ a {
   padding: 2%;
   border-top: 8px groove rgb(197, 118, 0);
   height: 300px;
+}
 
 .footer-links {
   display: block;
   font-family: 'Minecraft';
   margin: 3px;
   font-size: 16px;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 7px black;
   text-align: center;
 }
 
@@ -78,7 +79,7 @@ a {
 
 .footer-links a {
   display: inline-block;
-  color: #dadada;
+  color: white;
   line-height: 1.5;
   text-decoration: none;
   font-style: italic;
