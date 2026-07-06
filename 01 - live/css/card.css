@@ -35,6 +35,11 @@
   margin-bottom: 10px;
   border-radius: 10px;
   text-align: center;
+  transition: text-shadow 0.3s ease;
+}
+
+.friend-name:hover{
+  text-shadow: 2px 2px 12px white;
 }
 
 .friend-name,
