@@ -209,11 +209,9 @@ p.friend-desc {
 
 .latravion-page .card-content {
   display: flex;
-  font-family: 'ascend', cursive;
   font-size: 1rem;
   width: 100%;
   font-weight: bold;
-  align-items: flex-start;
 }
 
 .latravion-page .friend-image {

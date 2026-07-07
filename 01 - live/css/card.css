@@ -1,13 +1,14 @@
 /* base friend styles css */
 .friend-section {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
 }
 
-/* originally .friend-card */
+/* originally .friend-card (affects whole card) */
 .friend {
   display: flex;
   flex-direction: column;
