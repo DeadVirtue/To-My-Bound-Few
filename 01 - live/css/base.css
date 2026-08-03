@@ -15,10 +15,6 @@ body {
   margin: 0;
 }
 
-.page {
-  opacity: 0;
-}
-
 a {
   color: inherit;
   text-decoration: underline;

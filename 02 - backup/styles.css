@@ -13,12 +13,6 @@ body {
 	background-color: black;
 }
 
-.page {
-	opacity: 0;
-	transform: translateY(20px);
-	animation: fadeInUp 0.5s ease forwards;
-}
-
 a {
 	color: inherit;
 	text-decoration: underline;
@@ -144,14 +138,6 @@ a:hover {
 
 .friend-image:hover {
 	transform: scale(1.2);
-}
-
-/* Page animation */
-@keyframes fadeInUp {
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
 }
 
 /* Home button */
