@@ -10,16 +10,13 @@ body {
   flex-direction: column;
   font-family: 'Times New Roman', serif;
   background: url('../../images/background.png') no-repeat center bottom;
-  background-size: cover;
+  background-size: auto;
   height: 100%;
-  min-height: 100vh;
   margin: 0;
 }
 
 .page {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s ease forwards;
 }
 
 a {
@@ -55,65 +52,68 @@ a {
   text-decoration: none;
 }
 
+/* the footer */
 .footer {
   background-color: rgba(100, 149, 237, 0.55);
-  padding: 2%;
   border-top: 8px groove rgb(197, 118, 0);
-  height: 300px;
+  padding: 2%;
+  min-height: 300px;
 }
 
-/* default link styles for footer */
-.footer-links { 
+/* Default link styles for footer */
+.footer-links {
   display: block;
-  font-family: 'Minecraft';
   margin: 5px auto;
+  text-align: center;
+  font-family: 'Minecraft', sans-serif;
   font-size: 16px;
   text-shadow: 2px 2px 7px rgb(77, 52, 41);
-  text-align: center;
 }
 
 .footer-links ul {
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-/* list background styles */
+/* List background styles */
 .footer-links li {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10px;
   background-color: rgba(38, 0, 255, 0.65);
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: 3px 3px 5px black;
-  margin: 5px auto;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
-/* anchor link styles for footer */
+/* Anchor link styles for footer */
 .footer-links a {
   display: inline-block;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: italic;
   line-height: 1.5;
   text-decoration: none;
-  font-style: italic;
-  filter: none;
-  transition: transform 0.3s ease, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in;
-  font-size: 20px;
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    filter 0.3s ease-in;
 }
 
+/* footer links hover effects */
 .footer-links a:hover {
-  color: orange;
+  color: rgb(255, 165, 0);
   transform: scale(1.2);
-  text-shadow: 0 0 5px orange, 0.5px 0.5px 10px #ff7846, 1px 1px 20px #ff7129;
+  text-shadow:
+    0 0 5px rgb(255, 165, 0),
+    0.5px 0.5px 10px #ff7846,
+    1px 1px 20px #ff7129;
 }
 
 .footer-links a:active {
-  filter: invert(200%);
-}
-
-/* Page animation */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  filter: invert(100%);
 }
 
 /* Size responsiveness */
