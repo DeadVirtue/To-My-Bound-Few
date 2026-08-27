@@ -1,6 +1,5 @@
 /* specific friends styles css */
 .home-page .friend {
-  max-width: 90%;
   padding: 10px;
   border: 11px ridge rgb(0, 0, 0);
   border-radius: 15px;
@@ -69,7 +68,6 @@ p.friend-desc {
 
 /* No'more section */
 .nomore-page .friend {
-  max-width: 90%;
   padding: 2px;
   border: 11px ridge darkmagenta;
   border-radius: 15px;
@@ -124,7 +122,6 @@ p.friend-desc {
 
 /* Adan section */
 .adan-page .friend {
-  max-width: 90%;
   padding: 15px;
   border: 11px ridge darkred;
   border-radius: 15px;
@@ -173,7 +170,6 @@ p.friend-desc {
 }
 
 .latravion-page .friend {
-  max-width: 90%;
   padding: 15px;
   border: 11px ridge darkred;
   border-radius: 15px;
